@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0; 
+    padding: 0; 
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: #4a4a4a;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(90deg, #3a4a6a, #1b3a6d);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.5rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+nav ul li a:hover {
+    background-color: #fcbf49;
+    transform: scale(1.05);
+}
+.parallax {
+    height: 500px;
+    background-image: url('../images/Conservatorio(Paralax).jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0;
+    border-radius: 0;
+}
+.parallax .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+}
+.parallax h2 {
+    font-size: 3rem;
+}
+.parallax p {
+    font-size: 1.5rem;
+}
+.historia-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    height: 300px;
+}
+.historia-contenido p {
+    flex: 1;
+    margin-right: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.historia-imagen {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+    max-height: 300px;
+}
+#cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+#cursos article {
+    flex: 1 1 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+#cursos .imagenes {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#cursos .imagenes a {
+    flex: 1;
+    margin: 0;
+}
+#cursos .imagenes img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+#cursos h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    margin-left: 1rem;
+    text-align: center;
+}
+#cursos h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+#cursos p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+#cursos .button {
+    padding: 0.8rem 1.5rem;
+    background-color: #fcbf49;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    margin-left: 1rem;
+}
+#cursos .button:hover {
+    background-color: #ffcc33;
+}
+main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #2C566A;
+}
+section {
+    background-color: white;
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+    border-radius: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    font-size: 3rem;
+    color: #1b3a6d;
+    margin-bottom: 1.5rem;
+}
+section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+button, a.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #fcbf49;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+button:hover, a.button:hover {
+    background-color: #ffcc33;
+    transform: translateY(-2px);
+}
+section audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+}
+section iframe {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+}
+.video-local {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 400px;
+    margin: 20px 0;
+}
+.video-local h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    margin-left: 1rem;
+    color: #1b3a6d;
+}
+.video-local video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 0;
+    margin: 0 auto;
+}
+footer {
+    background: #2C566A;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}

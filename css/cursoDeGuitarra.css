@@ -1,0 +1,196 @@
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #4a4a4a;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #3a4a6a, #1b3a6d);
+    color: white;
+    padding: 1rem 2rem; /* Añade algo de padding lateral */
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos uno a cada lado */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100px; /* Ajusta la altura del header si es necesario */
+}
+
+header h1 {
+    margin: 0; /* Elimina márgenes verticales */
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    flex-grow: 1; /* Ocupará el espacio restante */
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Asegura que los enlaces se distribuyan a ambos lados */
+    align-items: center; /* Centra verticalmente los elementos de la lista */
+    width: 100%; /* Haz que el nav ocupe todo el ancho */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:first-child {
+    margin-right: auto; /* Empuja el primer elemento hacia la izquierda */
+}
+
+nav ul li:last-child {
+    margin-left: auto; /* Empuja el último elemento hacia la derecha */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fcbf49;
+    transform: scale(1.05);
+}
+
+
+/* Sección principal del curso */
+main {
+    padding: 0; /* Elimina el padding para que las secciones ocupen todo el ancho */
+    background-color: #2C566A;
+    color: white;
+}
+
+/* Información del curso */
+.info-curso {
+    background-color: #fff;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 0; /* Eliminar bordes redondos */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.info-curso h2 {
+    font-size: 2.5rem;
+    color: #1b3a6d;
+    margin-bottom: 1rem;
+}
+
+.info-curso h3 {
+    font-size: 2rem;
+    color: #1b3a6d;
+    margin-bottom: 1rem;
+}
+
+.info-curso p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.info-curso span {
+    color: #fcbf49;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul li, ol li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Sección de estudiantes destacados */
+.seccion-estudiantes {
+    background-color: white; /* Fondo blanco para la sección */
+    padding: 2rem; /* Espaciado alrededor de la sección */
+    margin: 0; /* Eliminar márgenes para que ocupe todo el ancho */
+}
+
+.estudiantes-destacados {
+    text-align: center;
+}
+
+.estudiantes-destacados h3 {
+    font-size: 2rem;
+    color: #1b3a6d;
+    margin-bottom: 1.5rem;
+}
+
+.estudiantes-destacados img {
+    width: 150px;
+    height: 200px; /* Fija la altura */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionarse */
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #fcbf49;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #ffcc33;
+    transform: translateY(-2px);
+}
+
+/* Pie de página */
+footer {
+    background-color: #2C566A;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0;
+}

@@ -1,0 +1,150 @@
+/* CSS básico para accesibilidad y buena experiencia */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3a4a6a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.redes-sociales-lista {
+    display: flex;
+    justify-content: center; /* Centra las imágenes en el contenedor */
+    gap: 20px; /* Espacio entre cada imagen */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.redes-sociales-lista a img {
+    width: 40px;  /* Ajusta el tamaño de las imágenes */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales-lista a img:hover {
+    transform: scale(1.1); /* Efecto de agrandado al pasar el cursor */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #1b3a6d;
+}
+.radio-group {
+    display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor */
+    flex-direction: column; /* Cada opción en su propia fila */
+    gap: 10px; /* Espacio entre cada opción */
+    margin: 1rem 0; /* Margen superior e inferior */
+}
+
+.radio-item {
+    display: flex; /* Usa flexbox para alinear label e input en la misma fila */
+    align-items: center; /* Alinea verticalmente el label y el input */
+}
+
+.radio-item input[type="radio"] {
+    margin: 0; /* Sin margen para evitar desalineación */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el input */
+    width: 20px; /* Ancho fijo para el radio button */
+    height: 20px; /* Altura fija para el radio button */
+}
+
+.radio-item label {
+    margin-left: 10px; /* Espacio entre el input y el label */
+    line-height: 20px; /* Alineación del texto */
+}
+
+/* Estilo para la sección de checkboxes */
+.checkbox-container {
+    display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor */
+    flex-direction: column; /* Cada opción en su propia fila */
+    gap: 10px; /* Espacio entre cada opción */
+    margin: 1rem 0; /* Margen superior e inferior */
+}
+
+.checkbox-item {
+    display: flex; /* Usa flexbox para alinear label e input en la misma fila */
+    align-items: center; /* Alinea verticalmente el label y el input */
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin: 0; /* Sin margen para evitar desalineación */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el input */
+    width: 20px; /* Ancho fijo para el checkbox */
+    height: 20px; /* Altura fija para el checkbox */
+}
+
+.checkbox-item label {
+    margin-left: 10px; /* Espacio entre el input y el label */
+    line-height: 20px; /* Alineación del texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 0.5rem; /* Espacio entre el input y la etiqueta */
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #fcbf49;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc33;
+}
+
+footer {
+    background-color: #3a4a6a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
