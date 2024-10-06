@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Seguinos en nuestras redes o</title>
-    <link rel="stylesheet" href="css/contacto.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="css/contacto.css"> 
 </head>
 
 <body>
-    <!-- Header con el menú de navegación -->
+    
     <header>
         <h1>Contacto</h1>
         <nav>
@@ -23,14 +23,14 @@
     </header>
 
     <main>
-        <!-- Sección de información de contacto -->
+        
         <section class="info-contacto">
             <h2>Información de Contacto</h2>
             <p>Dirección: Acosta Chico 2345</p>
             <p>Teléfono: +54 1178993376</p>
             <p>Horario: Lunes a Viernes de 9:00 AM a 6:00 PM</p>
 
-            <!-- Enlaces a redes sociales con imágenes -->
+            
             <div class="redes-sociales">
                 <h3>Conéctate con nosotros en redes sociales:</h3>
                 <div class="redes-sociales-lista">
@@ -47,11 +47,11 @@
             </div>
         </section>
 
-        <!-- Formulario de contacto -->
+        
         <section class="formulario-contacto">
             <h2>Formulario de Contacto</h2>
             <form action="submit_form.php" method="post">
-                <!-- Ingreso de textos -->
+                
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -64,7 +64,7 @@
                 <label for="curso-interes">Curso de Interés:</label>
                 <input type="text" id="curso-interes" name="curso-interes">
 
-                <!-- Opciones tipo radio -->
+                
                 <p>¿Cómo prefieres que te contactemos?</p>
                 <div class="radio-group">
                     <div class="radio-item">
@@ -83,9 +83,9 @@
 
 
 
-                <!-- Opciones tipo checkbox -->
+                
                 <p>¿En qué días prefieres recibir respuesta?</p>
-                <div class="checkbox-container"> <!-- Agrega esta clase -->
+                <div class="checkbox-container"> 
                     <div class="checkbox-item">
                         <input type="checkbox" id="dia-lunes" name="dias-preferencia[]" value="Lunes">
                         <label for="dia-lunes">Lunes</label>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
 
-                <!-- Datalist -->
+                
                 <label for="medio-contacto">¿Cómo supiste de nosotros?</label>
                 <input list="medios" id="medio-contacto" name="medio-contacto">
                 <datalist id="medios">
@@ -110,17 +110,17 @@
                     <option value="Otros">
                 </datalist>
 
-                <!-- Área de texto larga -->
+                
                 <label for="consulta">Tu Consulta:</label>
                 <textarea id="consulta" name="consulta" rows="5" required></textarea>
 
-                <!-- Botón para enviar el formulario -->
+                
                 <button type="submit" class="button">Enviar</button>
             </form>
         </section>
     </main>
 
-    <!-- Pie de página -->
+    
     <footer>
         <p>© 2024 Instituto de Cursos. Desarrollado por Luca Xavier Britez.</p>
     </footer>
